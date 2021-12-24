@@ -9,7 +9,7 @@ const session = require('express-session')
 const passport = require('passport')
 const flash = require('connect-flash')
 const passportStrategy = require('./config/passport')
-const port = 3000
+const port = process.env.PORT || 3000;
 
 // Overriding method
 app.use(methodOverride('_method'))
