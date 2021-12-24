@@ -1,0 +1,348 @@
+
+{{#if suggestProduct}}
+<div class="product__detail mt-4 container">
+    <div class="product__detail__wrapper row">
+        <p class="product__directory">
+            <span>Shopee</span> > {{suggestProduct.description}}
+        </p>
+        <div class="product__show">
+            <div class="show__product__image col-xl-5">
+                <img src="{{suggestProduct.image}}" alt="{{suggestProduct.description}}">
+            </div>
+            <div class="show__product__relation col-xl-7">
+                <div class="product__relation__top">
+                    <div class="product__name">
+                        {{#if (checkEmptyString suggestProduct.love)}}
+                            <span>{{suggestProduct.love}}</span>
+                        {{/if}}
+                        {{suggestProduct.description}}
+                    </div>
+                    <div class="product__price-sold">
+                        <div class="product__price">
+                            <span class="product__price__unit">₫</span> 
+                            <span class="product__price__number">{{suggestProduct.price}}</span>
+                        </div>
+                        <div class="product__sold">
+                            <span>
+                                {{suggestProduct.sold}}
+                            </span> Đã bán
+                        </div>
+                    </div>
+                </div>
+                <div class="product__relation__middle">
+                    <div class="product__mini-vouchers product__wrapper">
+                        <label class="product__mini-vouchers__label product__label">
+                            Mã Giảm Giá Của Shop 
+                        </label>
+                        <div class="product__mini-vouchers__wrapper">
+                            <span class="mini-vouchers__voucher">Giảm 2k</span>
+                            <span class="mini-vouchers__voucher">Giảm 5k</span>
+                            <span class="mini-vouchers__voucher">Giảm 8k</span>
+                            <span class="mini-vouchers__voucher">Giảm 1,7tr</span>
+                        </div>
+                    </div>
+                    <div class="product__deal product__wrapper">
+                        <label class="product__deal__label product__label">
+                            Deal Sốc 
+                        </label>
+                        <span class="product__deal__content">Mua Kèm Deal Sốc</span>
+                    </div>
+                    <div class="product__shipping product__wrapper">
+                        <label class="product__shipping__label product__label">
+                            Vận Chuyển 
+                        </label>
+                        <div class="product__shipping__wrapper">
+                            <div class="shipping__title">
+                                <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" y="0" class="icon-free-shipping">
+                                    <g>
+                                        <line fill="none" stroke-linejoin="round" stroke-miterlimit="10" x1="8.6" x2="4.2" y1="9.8" y2="9.8"></line>
+                                        <circle cx="3" cy="11.2" fill="none" r="2" stroke-miterlimit="10"></circle>
+                                        <circle cx="10" cy="11.2" fill="none" r="2" stroke-miterlimit="10"></circle>
+                                        <line fill="none" stroke-miterlimit="10" x1="10.5" x2="14.4" y1="7.3" y2="7.3"></line>
+                                        <polyline fill="none" points="1.5 9.8 .5 9.8 .5 1.8 10 1.8 10 9.1" stroke-linejoin="round" stroke-miterlimit="10"></polyline>
+                                        <polyline fill="none" points="9.9 3.8 14 3.8 14.5 10.2 11.9 10.2" stroke-linejoin="round" stroke-miterlimit="10"></polyline>
+                                    </g>
+                                </svg>
+                                <div>
+                                    <div class="shipping__to">
+                                    <label class="shipping__label">Vận Chuyển Tới</label> 
+                                        <select class="shipping__to__place">
+                                            <option value="">--Chọn tỉnh thành--</option>
+                                            <option value="">Hồ Chí Minh</option>
+                                            <option value="">Hà Nội</option>
+                                            <option value="">Đồng Nai</option>
+                                            <option value="">Đà Nẵng</option>
+                                            <option value="">Cần Thơ</option>
+                                            <option value="">Bình Dương</option>
+                                            <option value="">Huế</option>
+                                            <option value="">Thanh Hóa</option>
+                                        </select>
+                                    </div>
+                                    <div class="shipping__cost">
+                                        <label class="shipping__label"> Phí Vận Chuyển </label>
+                                        <span>10 Triệu</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__quantity product__wrapper">
+                        <label class="product__quantity__label product__label">
+                            Số lượng 
+                        </label>
+                        <div class="product__quantity__number">
+                            <button class="quantity__decrease-1">-</button>
+                            <input type="text" class="input__quantity__number" value="1">
+                            <button class="quantity__increase-1">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__relation__bottom">
+                    <button class="product__add-cart__btn">
+                        <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" y="0" class="icon-add-to-cart">
+                            <g>
+                                <g>
+                                    <polyline fill="none" points=".5 .5 2.7 .5 5.2 11 12.4 11 14.5 3.5 3.7 3.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></polyline>
+                                    <circle cx="6" cy="13.5" r="1" stroke="none"></circle>
+                                    <circle cx="11.5" cy="13.5" r="1" stroke="none"></circle>
+                                </g>
+                                <line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="7.5" x2="10.5" y1="7" y2="7"></line>
+                                <line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="9" x2="9" y1="8.5" y2="5.5"></line>
+                            </g>
+                        </svg>
+                        <p class="product__add__text">
+                            Thêm Vào Giỏ Hàng
+                        </p>
+                    </button>
+                    <button class="product__buy-now__btn">
+                        Mua Ngay
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="product__evaluation row">
+        <div class="product__evaluation__title">
+            Đánh Giá
+        </div>
+        <div class="form__push__comment">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUL92wwjdT7jJ6c5JwlIW8G9XKy0volehZEQ&usqp=CAU" alt="" class="image__user">
+            <div>
+                <textarea class="textarea__user__comment" placeholder="Viết đánh giá..." rows="5"></textarea>
+                <button class="user__comment__submit-btn">Đánh giá</button>
+            </div>
+        </div>
+        <div class="comments__of__users"></div>
+    </div>
+</div>
+
+{{else}}
+<div class="product__detail mt-4 container">
+    <div class="product__detail__wrapper row">
+        <p class="product__directory">
+            <span>Shopee</span> > {{octoberProduct.description}}
+        </p>
+        <div class="product__show">
+            <div class="show__product__image col-xl-5">
+                <img src="{{octoberProduct.image}}" alt="{{octoberProduct.description}}">
+            </div>
+            <div class="show__product__relation col-xl-7">
+                <div class="product__relation__top">
+                    <div class="product__name">
+                        {{#if (checkEmptyString octoberProduct.love)}}
+                            <span>{{octoberProduct.love}}</span>
+                        {{/if}}
+                        {{octoberProduct.description}}
+                    </div>
+                    <div class="product__price-sold">
+                        <div class="product__price">
+                            <span class="product__price__unit">₫</span> 
+                            <span class="product__price__number">{{octoberProduct.price}}</span>
+                        </div>
+                        <div class="product__sold">
+                            <span>
+                                {{octoberProduct.sold}}
+                            </span> Đã bán
+                        </div>
+                    </div>
+                </div>
+                <div class="product__relation__middle">
+                    <div class="product__mini-vouchers product__wrapper">
+                        <label class="product__mini-vouchers__label product__label">
+                            Mã Giảm Giá Của Shop 
+                        </label>
+                        <div class="product__mini-vouchers__wrapper">
+                            <span class="mini-vouchers__voucher">Giảm 2k</span>
+                            <span class="mini-vouchers__voucher">Giảm 5k</span>
+                            <span class="mini-vouchers__voucher">Giảm 8k</span>
+                            <span class="mini-vouchers__voucher">Giảm 1,7tr</span>
+                        </div>
+                    </div>
+                    <div class="product__deal product__wrapper">
+                        <label class="product__deal__label product__label">
+                            Deal Sốc 
+                        </label>
+                        <span class="product__deal__content">Mua Kèm Deal Sốc</span>
+                    </div>
+                    <div class="product__shipping product__wrapper">
+                        <label class="product__shipping__label product__label">
+                            Vận Chuyển 
+                        </label>
+                        <div class="product__shipping__wrapper">
+                            <div class="shipping__title">
+                                <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" y="0" class="icon-free-shipping">
+                                    <g>
+                                        <line fill="none" stroke-linejoin="round" stroke-miterlimit="10" x1="8.6" x2="4.2" y1="9.8" y2="9.8"></line>
+                                        <circle cx="3" cy="11.2" fill="none" r="2" stroke-miterlimit="10"></circle>
+                                        <circle cx="10" cy="11.2" fill="none" r="2" stroke-miterlimit="10"></circle>
+                                        <line fill="none" stroke-miterlimit="10" x1="10.5" x2="14.4" y1="7.3" y2="7.3"></line>
+                                        <polyline fill="none" points="1.5 9.8 .5 9.8 .5 1.8 10 1.8 10 9.1" stroke-linejoin="round" stroke-miterlimit="10"></polyline>
+                                        <polyline fill="none" points="9.9 3.8 14 3.8 14.5 10.2 11.9 10.2" stroke-linejoin="round" stroke-miterlimit="10"></polyline>
+                                    </g>
+                                </svg>
+                                <div>
+                                    <div class="shipping__to">
+                                    <label class="shipping__label">Vận Chuyển Tới</label> 
+                                        <select class="shipping__to__place">
+                                            <option value="">--Chọn tỉnh thành--</option>
+                                            <option value="">Hồ Chí Minh</option>
+                                            <option value="">Hà Nội</option>
+                                            <option value="">Đồng Nai</option>
+                                            <option value="">Đà Nẵng</option>
+                                            <option value="">Cần Thơ</option>
+                                            <option value="">Bình Dương</option>
+                                            <option value="">Huế</option>
+                                            <option value="">Thanh Hóa</option>
+                                        </select>
+                                    </div>
+                                    <div class="shipping__cost">
+                                        <label class="shipping__label"> Phí Vận Chuyển </label>
+                                        <span>10 Triệu</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__quantity product__wrapper">
+                        <label class="product__quantity__label product__label">
+                            Số lượng 
+                        </label>
+                        <div class="product__quantity__number">
+                            <button class="quantity__decrease-1">-</button>
+                            <input type="text" class="input__quantity__number" value="1">
+                            <button class="quantity__increase-1">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__relation__bottom">
+                    <button class="product__add-cart__btn">
+                        <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" y="0" class="icon-add-to-cart">
+                            <g>
+                                <g>
+                                    <polyline fill="none" points=".5 .5 2.7 .5 5.2 11 12.4 11 14.5 3.5 3.7 3.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></polyline>
+                                    <circle cx="6" cy="13.5" r="1" stroke="none"></circle>
+                                    <circle cx="11.5" cy="13.5" r="1" stroke="none"></circle>
+                                </g>
+                                <line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="7.5" x2="10.5" y1="7" y2="7"></line>
+                                <line fill="none" stroke-linecap="round" stroke-miterlimit="10" x1="9" x2="9" y1="8.5" y2="5.5"></line>
+                            </g>
+                        </svg>
+                        <p class="product__add__text">
+                            Thêm Vào Giỏ Hàng
+                        </p>
+                    </button>
+                    <button class="product__buy-now__btn">
+                        Mua Ngay
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="product__evaluation row">
+        <div class="product__evaluation__title">
+            Đánh Giá
+        </div>
+        <div class="form__push__comment">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUL92wwjdT7jJ6c5JwlIW8G9XKy0volehZEQ&usqp=CAU" alt="" class="image__user">
+            <div>
+                <textarea class="textarea__user__comment" placeholder="Viết đánh giá..." rows="5"></textarea>
+                <button class="user__comment__submit-btn">Đánh giá</button>
+            </div>
+        </div>
+        <div class="comments__of__users"></div>
+    </div>
+</div>
+{{/if}}
+
+<script>
+
+    //Xử lý thanh số lượng mua hàng
+    const minusBtn = document.querySelector('.quantity__decrease-1')
+    const plusBtn = document.querySelector('.quantity__increase-1')
+    const quantityBuying = document.querySelector('.input__quantity__number')
+    var quantityBuyingValue = quantityBuying.value
+
+    minusBtn.onclick = function() {
+        if(quantityBuyingValue > 1) {
+            quantityBuying.value = --quantityBuyingValue
+        }
+    }
+
+    plusBtn.onclick = function() {
+        quantityBuying.value = ++quantityBuyingValue
+    }
+
+    // Handle comment
+    function commentComponent() {
+        const textareaCmt = document.querySelector('.textarea__user__comment')
+        const pushCmtBtn = document.querySelector('.user__comment__submit-btn')
+        const cmtUsers = document.querySelector('.comments__of__users')
+        const actionCtmIcon = document.querySelector('.ti-more')
+        
+        const commentList = []
+        const comment = {
+            addCmt() {
+                if(textareaCmt.value.length) {
+                    commentList.unshift(textareaCmt.value)
+                    comment.renderCmt()
+                }
+            },
+            deleteCmt() {
+
+            },
+            editCmt() {
+
+            },
+            renderCmt() {
+                textareaCmt.value = ''
+                textareaCmt.focus()
+                const cmt = commentList.map((cmt, index) => {
+                    return `
+                        <div class="comments__user">
+                            <div class="user__information">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUL92wwjdT7jJ6c5JwlIW8G9XKy0volehZEQ&usqp=CAU" alt="" class="image__user">
+                                <label class="comments__username">Anna</label>
+                            </div>
+                            <p class="comments__content">${cmt}</p>
+                            <i class="ti-more">
+                                <div class="handle__comment">
+                                    <span class="edit__comment">Chỉnh sửa</span>
+                                    <span class="delete__comment">Xóa</span>
+                                </div>
+                            </i>
+                        </div>
+                    `
+                }).join('')
+                
+                cmtUsers.innerHTML = cmt
+            }
+        }
+                
+        pushCmtBtn.addEventListener('click', comment.addCmt)
+    }
+
+    commentComponent()
+
+</script>

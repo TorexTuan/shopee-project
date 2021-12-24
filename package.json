@@ -1,0 +1,44 @@
+{
+  "name": "shopee-project",
+  "version": "1.0.0",
+  "description": "clone shopee interface",
+  "main": "src/index.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcrypt-nodejs": "0.0.3",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.14.0",
+    "method-override": "^3.0.0",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "mongoose-slug-generator": "^1.0.4",
+    "sass": "^1.45.1"
+  },
+  "scripts": {
+    "start": "nodemon --inspect src/index.js",
+    "sass": "sass src/resources/scss/product.scss src/public/css/product.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TorexTuan/shopee-project.git"
+  },
+  "keywords": [
+    "shopee",
+    "shopee-interface",
+    "clone-shopee"
+  ],
+  "author": "Torex Tuan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TorexTuan/shopee-project/issues"
+  },
+  "homepage": "https://github.com/TorexTuan/shopee-project#readme"
+}

@@ -1,0 +1,401 @@
+
+
+.header__sign {
+    height: 8.4rem;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__sign__left {
+    display: flex;
+    align-items: center;
+}
+
+.sign__shopee-logo {
+    fill: var(--primary-color);
+    width: 15rem;
+    height: 4.2rem;
+    position: relative;
+    top: -4px;
+    margin-left: 18px;
+}
+
+
+.sign__title {
+    font-size: 2.4rem;
+    color: #222;
+    font-weight: 400;
+}
+
+.sign__need-help {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-right: 1.5rem;
+}
+
+/* body - sign up */
+
+.body__sign {
+    background-color: var(--primary-color);
+    
+}
+
+.body__sign__background {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 104rem;
+    height: 60rem;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* body - sign up frame */
+
+.alert.alert-danger {
+    font-size: 1.6rem;
+}
+
+.shopee__form__sign {
+    background-color: var(--white-color);
+    width: 39.7rem;
+    min-height: 42.7rem;
+    box-shadow: 0 3px 10px 0 rgb(0 0 0 / 14%);
+    border-radius: .25rem;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    padding: 3rem;
+}
+
+.form__sign__top__title__block {
+    margin-bottom: 2.2rem ;
+    display: flex;
+    align-items: center;
+}
+
+/* effect for sign up */
+.error__input {
+    font-size: 1.1rem;
+    color: #ff424f;
+    font-weight: 500;
+    margin: 0.2rem 0 0 0.5rem
+}
+
+.error__input__border {
+    border: 1px solid #ff424f !important;
+}
+
+.error__input__background {
+    background: #fff6f7;
+}
+
+.form__sign__top__tick-icon {
+    height: 1.6rem;
+    width: 1.6rem;
+    margin: 0 1.5rem;
+    
+}
+/* end effect for sign up */
+
+.form__sign__top__input {
+    font-size: 1.4rem;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0 1.1rem;
+    outline: none;
+}
+
+.form__sign__top__input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1.4rem;
+    padding-left: .2rem;
+}
+
+
+.form__sign__top__title__sign-in {
+    font-size: 2rem;
+    font-weight: 500;
+    min-width: 10rem;
+}
+
+.form__sign__top__title__sign-up {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2.2rem ;
+}
+
+.form__sign__top__message {
+    margin-right: 1.6rem;
+    margin-left: 2rem;
+    font-weight: 700;
+    border: .2rem solid #ffbf00;
+    border-radius: .2rem;
+    padding: 1.1rem 1.4rem;
+    color: #ffbf00;
+    font-size: 1.4rem;
+    background-color: #fefaec;
+    position: relative;
+}
+
+.form__sign__top__message::after {
+    position: absolute;
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-color: #fefaec;
+    top: 48%;
+    right: -1rem;
+    transform: rotate(45deg) translateX(-50%);
+    border-top: 2px solid #ffbf00;
+    border-right: 2px solid #ffbf00;
+}
+
+.form__sign__top__qr-image {
+    width: 4rem;
+    height: 4rem;
+}
+
+.form__sign__top__input__block {
+    margin-bottom: 1.4rem;
+}
+
+.fill__input__password,
+.fill__input__user-name {
+    font-size: 1.2rem;
+    padding-top: 0.4rem;
+    color: #ff424f;
+    font-weight: 500;
+}
+
+.form__sign__top__input__wrapper {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    outline: none;
+    border-radius: 0.2rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.border-focus-input {
+    border-color: rgba(0, 0, 0, 0.54);
+    box-shadow: 0 0 4px rgb(0 0 0 / 14%);
+}
+
+.eye-close-image,
+.eye-open-image {
+    width: 2rem;
+    height: 1.6rem;
+    margin: 0 1.5rem;
+    cursor: pointer;
+}
+
+.eye-close-image {
+    margin-top: 6px;
+}
+
+
+.input__wrapper--focus{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.14);
+}
+
+.form__sign__top__input-username,
+.form__sign__top__input-password {
+    font-size: 1.4rem;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0 1.1rem;
+    outline: none;
+}
+
+.invalid-border {
+    border: 1px solid #ff424f !important;
+}
+
+.invalid-background {
+    box-shadow: 0 0 0 30px #fff6f7 inset;
+}
+
+
+.form__sign__top__tick-icon {
+    height: 1.6rem;
+    width: 1.6rem;
+    margin: 0 1.5rem;
+    
+}
+
+.form__sign__top__input-username::placeholder,
+.form__sign__top__input-password::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 1.4rem;
+    padding-left: 2px;
+}
+
+
+.form__sign__top__button {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.4rem;
+    border: none;
+    padding: 12px 0;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+
+.form__sign__top__button:focus {
+    outline: none;
+}
+
+.button-disable {
+    opacity: 0.7;
+    cursor: not-allowed !important;
+}
+
+.form__sign__top__forget-password {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.form__sign__top__forget-password > a {
+    font-size: 1.2rem;
+    color: #05a;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.shopee__form__sign__middle {
+    margin: 1rem 0 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.form__sign__middle__text {
+    margin: 0 1.6rem;
+    color: #ccc;
+    font-size: 1.3rem;
+}
+
+.form__sign__middle__line {
+    height: 1px;
+    background-color: #dbdbdb;
+    flex: 1;
+}
+
+.form__sign__bottom__app {
+    display: flex;
+    margin: 0 -5px;
+}
+
+.form__sign__bottom__app__link {
+    width: 33.333%;
+    margin: 0 5px;
+    min-height: 4rem;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    border-radius: 0.2rem;
+    display: flex;
+    align-items: center;
+    padding: 0 2px;
+}
+
+.form__sign__bottom__app__link:hover {
+    opacity: 0.9;
+}
+
+.app__icon__background {
+    background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/a9e27c05087330a9581e4b9b39ad4417.png);
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.app__link__facebook {
+    background-color: #1877f2;
+}
+
+.app__link__facebook__icon {
+    background-size: 372% 232%;
+    background-position: 76.47058823529412% 15.151515151515152%;
+    margin: 0 5px 0 7px;
+    fill: var(--white-color);
+}
+
+.app__link__google {
+    background-color: #4285f4;
+}
+
+.app__link__google__icon__wrapper {
+    width: 3.6rem;
+    height: 3.6rem;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.app__link__google__icon {
+    background-size: 516.6666666666666% 322.22222222222223%;
+    background-position: 100% 100%;
+    background-color: var(--white-color);
+}
+
+.app__link__apple {
+    background-color: #000;
+}
+
+
+.app__link__apple__icon {
+    background-size: 290.625% 181.25%;
+    background-position: 8.19672131147541% 19.23076923076923%;
+    margin: 0 14px 0 7px;
+}
+
+.form__sign__bottom__term-policy {
+    margin: 3rem 0;
+    font-size: 1.2rem;
+    color: #000000de;
+    text-align: center;
+    font-weight: 500;
+}
+
+.form__sign__bottom__term-policy > a {
+    color: var(--primary-color);
+}
+
+.form__sign__bottom__ask {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.form__sign__bottom__ask > span {
+    color: var(--text-color);
+    opacity: 0.3;
+    font-size: 1.4rem;
+}
+
+.form__sign__bottom__ask > a { 
+    color: var(--primary-color);
+    font-size: 1.4rem;
+
+}
+
+/* footer - sign up */
+
+.footer__customer__wrapper,
+.footer__site__wrapper {
+    background-color: #f5f5f5;;
+}
