@@ -66,6 +66,7 @@ class HomeController {
                 layout: 'catalogLayout.hbs',
                 suggestProduct,
                 octoberProduct,
+                username: req.user ? req.user.username : '',
              }))
             .catch(next)
     }
