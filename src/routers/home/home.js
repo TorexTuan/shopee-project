@@ -10,7 +10,7 @@ function isLogin(req, res, next) {
 }
 
 router.get('/log-out', homeController.logout)
-router.get('/sign-up', homeController.signup)
+router.get('/sign-up', isLogin,homeController.signup)
 router.post('/sign-up', homeController.signupPost)
 router.get('/sign-in', isLogin, homeController.signin)
 router.post('/sign-in', 

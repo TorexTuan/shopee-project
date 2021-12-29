@@ -154,7 +154,8 @@ class HomeController {
             .lean()
             .then(catalogGoodItems => res.render('catalog', {
                 layout: 'catalogLayout.hbs',
-                catalogGoodItems
+                catalogGoodItems,
+                username: req.user ? req.user.username : '',
             }))
       
     }
