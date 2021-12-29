@@ -9,7 +9,10 @@ const session = require('cookie-session')
 const passport = require('passport')
 const flash = require('connect-flash')
 const passportStrategy = require('./config/passport')
+const dotenv = require('dotenv')
 const port = process.env.PORT || 3000;
+
+dotenv.config()
 
 // Overriding method
 app.use(methodOverride('_method'))
