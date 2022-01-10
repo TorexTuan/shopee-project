@@ -1198,7 +1198,7 @@ button[disabled], html input[disabled] {
     padding-left: 3rem;
     background-color: transparent;
     font-size: 1.2rem;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .chat__right__input:focus .chat__right__input__wrapper {
