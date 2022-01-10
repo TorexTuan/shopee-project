@@ -5,106 +5,14 @@
                 <h3 class="footer__customer__col__title">
                     CHĂM SÓC KHÁCH HÀNG
                 </h3>
-                <ul class="footer__customer__col__list">
-                    <li class="footer__customer__list__item">
-                        <a href="" class="footer__customer__item__link">
-                            Trung Tâm Trợ Giúp
-                        </a>
-                    </li>
-                    <li class="footer__customer__list__item">
-                        <a href="" class="footer__customer__item__link">
-                            Shopee Blog
-                        </a>
-                    </li>
-                    <li class="footer__customer__list__item">
-                        <a href="" class="footer__customer__item__link">
-                            Shopee Mall
-                        </a>
-                    </li>
-                    <li class="footer__customer__list__item">
-                        <a href="" class="footer__customer__item__link">
-                            Hướng Dẫn Mua Hàng
-                        </a>
-                    </li>
-                    <li class="footer__customer__list__item">
-                        <a href="" class="footer__customer__item__link">
-                            Hướng Dẫn Bán Hàng
-                        </a>
-                    </li>
-                    <li class="footer__customer__list__item">
-                        <a href="" class="footer__customer__item__link">
-                            Thanh Toán
-                        </a>
-                    </li>
-                    <li class="footer__customer__list__item">
-                        <a href="" class="footer__customer__item__link">
-                            Shopee Xu
-                        </a>
-                    </li>
-                    <li class="footer__customer__list__item">
-                        <a href="" class="footer__customer__item__link">
-                            Vận Chuyển
-                        </a>
-                    </li>
-                    <li class="footer__customer__list__item">
-                        <a href="" class="footer__customer__item__link">
-                            Trả Hàng & Hoàn Tiền
-                        </a>
-                    </li>
-                    <li class="footer__customer__list__item">
-                        <a href="" class="footer__customer__item__link">
-                            Chăm Sóc Khách Hàng
-                        </a>
-                    </li>
-                    <li class="footer__customer__list__item">
-                        <a href="" class="footer__customer__item__link">
-                            Chính Sách Bảo Hành
-                        </a>
-                    </li>
-                </ul>
+                <ul class="footer__customer__col__list"></ul>
             </div>
 
             <div class="footer__customer__col">
                 <h3 class="footer__customer__col__title">
                     VỀ SHOPEE
                 </h3>
-                <ul class="footer__customer__col__list">
-                    <li class="footer__customer__list__item">
-                        <a href="" class="footer__customer__item__link">
-                            Giới Thiệu Về Shopee Việt Nam
-                        </a>
-                    </li>
-                    <li class="footer__customer__list__item">
-                        <a href="" class="footer__customer__item__link">
-                            Tuyển Dụng
-                        </a>
-                    </li>
-                    <li class="footer__customer__list__item">
-                        <a href="" class="footer__customer__item__link">
-                            Điều Khoản Shopee
-                        </a>
-                    </li>
-                    <li class="footer__customer__list__item">
-                        <a href="" class="footer__customer__item__link">
-                            Chính Hãng
-                        </a>
-                    </li>
-                    <li class="footer__customer__list__item">
-                        <a href="" class="footer__customer__item__link">
-                            Flash Sales
-                        </a>
-                    </li>
-                    <li class="footer__customer__list__item">
-                        <a href="" class="footer__customer__item__link">
-                            Chương Trình Tiếp Thị Liên Kết Shopee
-                        </a>
-                    </li>
-                    <li class="footer__customer__list__item">
-                        <a href="" class="footer__customer__item__link">
-                            Liên Hệ Với Truyền Thông
-                        </a>
-                    </li>
-                </ul>
+                <ul class="footer__customer__col__list footer__about__shopee"></ul>
             </div>
 
             <div class="footer__customer__col">
@@ -343,7 +251,6 @@
 
 <script>
      //    chat - watch all
-    const $ = document.querySelector.bind(document)
 
     const watchAll = $('.chat__right__list__wrapper')
     watchAll.addEventListener('click', () => {
@@ -405,4 +312,56 @@
             listWrapper.style.display = 'none'
         }    
     }
+</script>
+
+{{!-- cham soc khach hang --}}
+<script>
+    const footerCustomerList = [
+        "Trung Tâm Trợ Giúp",
+        "Tuyển Dụng",
+        "Điều Khoản Shopee",
+        "Chính Hãng",
+        "Thanh Toán",
+        "Shopee Xu",
+        "Vận Chuyển",
+        "Trả Hàng & Hoàn Tiền",
+        "Chăm Sóc Khách Hàng",
+        "Chính Sách Bảo Hành"
+    ]
+    const footerCustomers = $('.footer__customer__col__list')
+    const footerCustomerRender = footerCustomerList.map(footerCustomerItem => {
+        return `
+            <li class="footer__customer__list__item">
+                <a href="" class="footer__customer__item__link">
+                    ${footerCustomerItem}
+                </a>
+            </li>
+        `
+    })
+    footerCustomers.innerHTML = footerCustomerRender.join('')
+</script>
+
+{{!-- Ve shopee --}}
+
+<script>
+    const footerAboutShoopeeList = [
+        "Giới Thiệu Về Shopee Việt Nam",
+        "Shopee Blog",
+        "Shopee Mall",
+        "Hướng Dẫn Mua Hàng",
+        "Flash Sales",
+        "Liên Hệ Với Truyền Thông",
+    ]
+    const footerAboutShoopee = $('.footer__about__shopee')
+    console.log(footerAboutShoopee)
+    const footerAboutShoopeeRender = footerAboutShoopeeList.map(footerAboutShoopeeItem => {
+        return `
+            <li class="footer__customer__list__item">
+                <a href="" class="footer__customer__item__link">
+                    ${footerAboutShoopeeItem}
+                </a>
+            </li>
+        `
+    })
+    footerAboutShoopee.innerHTML = footerAboutShoopeeRender.join('')
 </script>
