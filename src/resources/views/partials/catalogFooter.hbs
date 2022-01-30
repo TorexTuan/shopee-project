@@ -252,6 +252,8 @@
 <script>
      //    chat - watch all
 
+    const $ = document.querySelector.bind(doc)
+
     const watchAll = $('.chat__right__list__wrapper')
     watchAll.addEventListener('click', () => {
         document.querySelector('.chat__right__list__items').classList.toggle('display-block')
@@ -316,6 +318,7 @@
 
 {{!-- cham soc khach hang --}}
 <script>
+
     const footerCustomerList = [
         "Trung Tâm Trợ Giúp",
         "Tuyển Dụng",

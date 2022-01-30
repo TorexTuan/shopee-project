@@ -1012,8 +1012,6 @@ button:focus {
     width: 17px;
     height: 17px;
     object-fit: cover;
-    position: relative;
-    top: 3px;
 }
 
 .body2__mall__header-watchAll{
